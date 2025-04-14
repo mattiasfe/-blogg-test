@@ -1,3 +1,22 @@
 .subText {
     font-size: 14px;
 }
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* or space-evenly */
+    align-items: center; /* Adjust as needed (center, flex-start, stretch) */
+    gap: 500px; /* Modern way to add spacing (replaces margins) */
+    flex-wrap: wrap; /* Optional: Wrap items on small screens */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.363);
+}
+
+/* Optional: Adjust for small screens */
+@media (max-width: 768px) {
+    .container {
+        gap: 16px;
+    }
+}
+

@@ -1,12 +1,7 @@
 const app = document.getElementById('app');
 
 
-function mainPageView() {
-    app.innerHTML = /*HTML*/`
-        <h1>Velkommen til min blogg</h1>
-            ${createPosts()}
-    `;
-}
+
 
 function createPosts() {
     let html = '';
@@ -26,3 +21,4 @@ function createPosts() {
     }
     return html;
 }
+
