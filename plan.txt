@@ -1,0 +1,16 @@
+1. Åpne lukke funksjon for tekst på bildet //gjort
+
+2. legge inn bildet
+
+3. flytte ut mainpageView i egen fil.
+
+4. posts har en kategori
+
+5. få inn bilder
+
+6. social share button.
+
+7. planlegge innlegg funksjon
+
+8. article texten viser bare noen av de 
+   første ordene for så at man kan trykke på les mer
