@@ -3,3 +3,8 @@ function showArticle(Ident) {
     post.showArticleText = !post.showArticleText;
     pages();
 }
+function showArticleFurniture(Ident) {
+    const furniture = model.data.furniture[Ident -1];
+    furniture.showArticleText = !furniture.showArticleText;
+    pages();
+}

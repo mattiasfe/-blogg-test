@@ -22,3 +22,22 @@ function createPosts() {
     return html;
 }
 
+function furniturePostsView() {
+    let html = '';
+    for (const furniture of model.data.furniture) {
+        html += /*HTML*/`
+            <article>
+                <h3>${furniture.header}</h3>
+                    <div onclick="showArticleFurniture('${furniture.id}')">
+                        <p class="subText">Les mer...</p>
+                    </div>
+                <img src="${furniture.img}">
+                <div>
+                    ${furniture.showArticleText ? furniture.article : ''}
+                </div>
+            </article>
+        `;
+    }
+    return html;
+}
+
