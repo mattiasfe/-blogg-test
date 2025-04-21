@@ -24,16 +24,16 @@ function createPosts() {
 
 function furniturePostsView() {
     let html = '';
-    for (const furniture of model.data.furniture) {
+    for (const furnitur of model.data.furniture) {
         html += /*HTML*/`
             <article>
-                <h3>${furniture.header}</h3>
-                    <div onclick="showArticleFurniture('${furniture.id}')">
+                <h3>${furnitur.header}</h3>
+                    <div onclick="showArticleFurniture('${furnitur.id}')">
                         <p class="subText">Les mer...</p>
                     </div>
-                <img src="${furniture.img}">
+                <img src="${furnitur.img}">
                 <div>
-                    ${furniture.showArticleText ? furniture.article : ''}
+                    ${furnitur.showArticleText ? furnitur.article : ''}
                 </div>
             </article>
         `;
