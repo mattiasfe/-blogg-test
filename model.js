@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'main',
+        currentPage: ['main', 'furnitureView'],
         darkmode: false,
         editPage: false,
         
