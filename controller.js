@@ -8,3 +8,13 @@ function showArticleFurniture(Iden) {
     furnitur.showArticleText = !furnitur.showArticleText;
     pages();
 }
+
+function changeCategory(category) {
+    if(category == 'All Posts') {
+        model.inputs.currentCategory = '';
+    }else {
+
+        model.inputs.currentCategory = category;
+    }
+    mainPageView();
+}
