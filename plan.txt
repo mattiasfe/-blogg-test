@@ -1,16 +1,14 @@
 1. Åpne lukke funksjon for tekst på bildet //gjort
 2. få inn bilder //gjort
 3. flytte ut mainpageView i egen fil.//gjort
+4. article texten viser bare noen av de 
+   første ordene for så at man kan trykke på les mer//gjort
+5. posts har en kategori//gjort
 
 
 
-4. posts har en kategori
+6. social share button.
 
-5. social share button.
-
-6. planlegge innlegg funksjon
-
-7. article texten viser bare noen av de 
-   første ordene for så at man kan trykke på les mer
+7. planlegge innlegg funksjon
 
 8. bytte overskrift ut ifra hvilken side du er på

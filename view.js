@@ -32,7 +32,7 @@ function createPosts() {
                         ${post.showArticleText ? post.article : ''}
                     </div>
                 <img style="width: 300px" src="${post.img}">
-            </article>
+            </article> 
         `;
     }
  } 
