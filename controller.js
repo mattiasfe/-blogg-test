@@ -19,17 +19,3 @@ function changeCategory(category) {
     mainPageView();
 }
 
-function showHeadline() {
-    for (const post of model.data.posts) {
-        if(post.category == model.inputs.currentCategory) {
-        return /*HTML*/`
-        <h1>${model.inputs.currentCategory}</h1>
-        `;
-        }
-        else if(model.inputs.currentCategory == '') {
-            return /*HTML*/`
-            <h1>Welcome</h1>
-            `;
-        }
-    }
-}

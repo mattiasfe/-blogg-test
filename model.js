@@ -17,6 +17,7 @@ const model = {
             article: '',
             planPost: ''
         }
+        
 
     },
     data: {
