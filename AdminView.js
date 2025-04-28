@@ -15,3 +15,13 @@ function adminView() {
         </table>
     `;
 }
+
+function adminLoginView() {
+    app.innerHTML = /*HTML*/`
+        <div>
+            Bruker Navn:<input type="text" oninput="model.inputs.adminLoginPage.username = this.value"><br>
+            Passord:<input type="text" oninput="model.inputs.adminLoginPage.password = this.value"><br>
+            <button onclick="checkLogin()">Submit</button>
+        </div>
+    `;
+}

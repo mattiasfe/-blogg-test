@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'main',
+        currentPage: 'admin',
         
         darkmode: false,
         editPage: false,
@@ -16,8 +16,12 @@ const model = {
             header: '',
             article: '',
             planPost: ''
+        },
+        adminLoginPage: {
+            username: '',
+            password: ''
         }
-        
+
 
     },
     data: {
@@ -194,6 +198,10 @@ const model = {
             {name: 'Furniture', onPage: false},
             {name: 'All Posts', onPage: true},
             
-        ]
+        ],
+        accounts: {
+            username: 'Mattias',
+            password: '123'
+        }
     }
 }

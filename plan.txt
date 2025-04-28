@@ -4,6 +4,7 @@
 4. article texten viser bare noen av de 
    første ordene for så at man kan trykke på les mer//gjort
 5. posts har en kategori//gjort
+8. bytte overskrift ut ifra hvilken side du er på//gjort
 
 
 
@@ -11,4 +12,12 @@
 
 7. planlegge innlegg funksjon
 
-8. bytte overskrift ut ifra hvilken side du er på
+9. admin view
+
+10. Legge ut innlegg
+
+11. Se innlegg //oversikt over tidligere innlegg
+
+12. Preview
+
+13. Knapper for submit og for preview
