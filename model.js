@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'admin',
+        currentPage: 'main',
         
         darkmode: false,
         editPage: false,

@@ -3,11 +3,6 @@ function showArticle(Ident) {
     post.showArticleText = !post.showArticleText;
     pages();
 }
-/* function showArticleFurniture(Iden) {
-    const furnitur = model.data.furniture[Iden -1];
-    furnitur.showArticleText = !furnitur.showArticleText;
-    pages();
-} */
 
 function changeCategory(category) {
     if(category == 'All Posts') {

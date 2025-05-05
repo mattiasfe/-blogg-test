@@ -8,31 +8,31 @@ function createPosts() {
     for (const post of model.data.posts) {
         if(post.category == model.inputs.currentCategory) {
         html += /*HTML*/`
-        <article>
-                <h3>${post.header}</h3>
-                    <div onclick="showArticle('${post.id}')">
-                        <p class="subText">Les mer...</p>
-                    </div>
-                    <div>
-                        ${post.showArticleText ? post.article : ''}
-                    </div>
-                <img style="width: 300px" src="${post.img}">
+        <div class="article-card">
+            <h3>${post.header}</h3>
+            <img style="width: 300px" src="${post.img}">
+            <article class="article-content">
+                        <div class="articleText" onclick="showArticle('${post.id}')">
+                            ${post.showArticleText ? post.article : ''}
+                            <p class="subText">Les mer...</p>
+                        </div>
             </article>
+        </div>  
         `;
     }
     else if(model.inputs.currentCategory == '') {
         
         html += /*HTML*/`
-            <article>
-                <h3>${post.header}</h3>
-                    <div onclick="showArticle('${post.id}')">
-                        <p class="subText">Les mer...</p>
-                    </div>
-                    <div>
+        <div class="article-card">
+            <h3>${post.header}</h3>
+            <img style="width: 400px" src="${post.img}" alt="Beskrivelse" class="article-image">
+            <article class="article-content">
+                        <div class="articleText" onclick="showArticle('${post.id}')">
                         ${post.showArticleText ? post.article : ''}
-                    </div>
-                <img style="width: 300px" src="${post.img}">
+                        <p class="subText">Les mer...</p>
+                        </div>
             </article> 
+        </div>
         `;
     }
  } 
@@ -45,7 +45,9 @@ function showNavBarItems() {
     let html = '';
     for(const category of model.data.categorys) {
         html += /*HTML*/`
+        <div class="article-container">
             <th onclick="changeCategory('${category.name}')">${category.name}</th>
+        </div>
         `;
     }
     return html;
@@ -66,23 +68,4 @@ function showHeadline() {
     }
 }
 
-
-/*function furniturePostsView() {
-    let html = '';
-    for (const furnitur of model.data.furniture) {
-        html += `
-            <article>
-                <h3>${furnitur.header}</h3>
-                    <div onclick="showArticleFurniture('${furnitur.id}')">
-                        <p class="subText">Les mer...</p>
-                    </div>
-                <img src="${furnitur.img}">
-                <div>
-                    ${furnitur.showArticleText ? furnitur.article : ''}
-                </div>
-            </article>
-        `;
-   }
-    return html;
-}*/
 

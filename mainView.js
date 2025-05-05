@@ -2,11 +2,13 @@ function mainPageView() {
     app.innerHTML = /*HTML*/`
         <h1>${showHeadline()}</h1>
         <button onclick="adminLoginView()">Admin Login</button>
-        <table class="container">
+    <table>
         <tr class="container">
             ${showNavBarItems()}
         </tr>
     </table>
-            ${createPosts()}
+    <div>
+        ${createPosts()}
+    </div>
     `;
 }
